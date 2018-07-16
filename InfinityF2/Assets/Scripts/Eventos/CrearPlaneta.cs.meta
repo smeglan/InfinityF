@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 442529bace9ff8f41ac86ce0d020194d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - creador: {instanceID: 0}
+  - btn_crear: {instanceID: 0}
+  - btn_random: {instanceID: 0}
+  - planet: {fileID: 1302853306954878, guid: 153772b94bf0ba74f9c4aca0b957a4d7, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
