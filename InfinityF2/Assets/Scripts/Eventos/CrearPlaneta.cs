@@ -40,7 +40,8 @@ public class CrearPlaneta : MonoBehaviour {
             (int)creador.transform.Find("Panel_Recursos").Find("Panel_Iridio").Find("Slider").GetComponent<Slider>().value,
             (int)creador.transform.Find("Panel_Recursos").Find("Panel_Paladio").Find("Slider").GetComponent<Slider>().value,
             (int)creador.transform.Find("Panel_Recursos").Find("Panel_Platino").Find("Slider").GetComponent<Slider>().value,
-            (int)creador.transform.Find("Panel_Recursos").Find("Panel_Zero").Find("Slider").GetComponent<Slider>().value);
+            (int)creador.transform.Find("Panel_Recursos").Find("Panel_Zero").Find("Slider").GetComponent<Slider>().value,
+            ventana_estado_planetas);
         _newplanet.transform.position=ubicacion;
         _newplanet.transform.SetParent(this.transform.parent.Find("Planetas").transform, true);
         creador.SetActive(false);
