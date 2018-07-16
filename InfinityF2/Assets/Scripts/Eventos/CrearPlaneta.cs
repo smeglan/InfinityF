@@ -12,6 +12,8 @@ public class CrearPlaneta : MonoBehaviour {
     private GameObject ventana_estado_planetas;
     [SerializeField]
     private GameObject planet;
+    [SerializeField]
+    private GameObject estacion;
     //World
     private Vector3 ubicacion;
     Vector2 mousePos = new Vector2();
@@ -33,18 +35,26 @@ public class CrearPlaneta : MonoBehaviour {
     }
     void crearPlaneta()
     {
-        print(creador.transform.Find("Botones").Find("Dropdown").GetComponent<Dropdown>().value);
-        GameObject _newplanet = Instantiate(planet, planet.transform.position, planet.transform.rotation);
-        _newplanet.GetComponent<Planeta>().crearPlaneta((transform.parent.GetComponent<Sistema>().name + transform.parent.GetComponents<Planeta>().Length + 1),
-            ubicacion.x, ubicacion.y, creador.transform.Find("Botones").Find("Dropdown").GetComponent<Dropdown>().value,
-            (int)creador.transform.Find("Panel_Recursos").Find("Panel_Iridio").Find("Slider").GetComponent<Slider>().value,
-            (int)creador.transform.Find("Panel_Recursos").Find("Panel_Paladio").Find("Slider").GetComponent<Slider>().value,
-            (int)creador.transform.Find("Panel_Recursos").Find("Panel_Platino").Find("Slider").GetComponent<Slider>().value,
-            (int)creador.transform.Find("Panel_Recursos").Find("Panel_Zero").Find("Slider").GetComponent<Slider>().value,
-            ventana_estado_planetas);
-        _newplanet.transform.position=ubicacion;
-        _newplanet.transform.SetParent(this.transform.parent.Find("Planetas").transform, true);
-        creador.SetActive(false);
+        if (creador.transform.Find("Botones").Find("Dropdown").GetComponent<Dropdown>().value != 7)
+        {
+            GameObject _newplanet = Instantiate(planet, planet.transform.position, planet.transform.rotation);
+            _newplanet.GetComponent<Planeta>().crearPlaneta((transform.parent.GetComponent<Sistema>().name + transform.parent.GetComponents<Planeta>().Length + 1),
+                ubicacion.x, ubicacion.y, creador.transform.Find("Botones").Find("Dropdown").GetComponent<Dropdown>().value,
+                (int)creador.transform.Find("Panel_Recursos").Find("Panel_Iridio").Find("Slider").GetComponent<Slider>().value,
+                (int)creador.transform.Find("Panel_Recursos").Find("Panel_Paladio").Find("Slider").GetComponent<Slider>().value,
+                (int)creador.transform.Find("Panel_Recursos").Find("Panel_Platino").Find("Slider").GetComponent<Slider>().value,
+                (int)creador.transform.Find("Panel_Recursos").Find("Panel_Zero").Find("Slider").GetComponent<Slider>().value,
+                ventana_estado_planetas);
+            _newplanet.transform.position = ubicacion;
+            _newplanet.transform.SetParent(this.transform.parent.Find("Planetas").transform, true);
+            creador.SetActive(false);
+        }
+        else {
+            GameObject _newEstation = Instantiate(estacion, estacion.transform.position, estacion.transform.rotation);
+            _newEstation.transform.position = ubicacion;
+            _newEstation.transform.SetParent(this.transform.parent.Find("Planetas").transform, true);
+            creador.SetActive(false);
+        }
     }
 
     void iniRandom()

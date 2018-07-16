@@ -54,14 +54,15 @@
      <Compile Include="Assets\Scripts\Eventos\ActualizarImg.cs" />
      <Compile Include="Assets\Scripts\Eventos\ActualizarLabel.cs" />
      <Compile Include="Assets\Scripts\Eventos\CrearPlaneta.cs" />
+     <Compile Include="Assets\Scripts\Modelos\Estacion.cs" />
      <Compile Include="Assets\Scripts\Modelos\Planeta.cs" />
      <Compile Include="Assets\Scripts\Modelos\Sector.cs" />
      <Compile Include="Assets\Scripts\Modelos\Sistema.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/Sebastian/Documents/InfinityF2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Sebastian/Documents/InfinityF/InfinityF2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/Sebastian/Documents/InfinityF2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/Sebastian/Documents/InfinityF/InfinityF2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
