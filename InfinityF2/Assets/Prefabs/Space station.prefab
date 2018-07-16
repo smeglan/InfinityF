@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 4696623177786614}
   - component: {fileID: 212821626490346104}
   - component: {fileID: 61084231178192196}
-  - component: {fileID: 114068610392480452}
+  - component: {fileID: 114652112118926566}
   m_Layer: 0
   m_Name: Space station
   m_TagString: Estacion
@@ -96,7 +96,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4973512, y: 4.9201446}
   m_EdgeRadius: 0
---- !u!114 &114068610392480452
+--- !u!114 &114652112118926566
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1296502855121226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6ed98dd6c5f674c933c8568df2eac5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f18b34c8decd254e9ed41cbae6ff7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212821626490346104

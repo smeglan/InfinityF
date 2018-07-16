@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Planeta
   - Sistema
-  - Estacion
   layers:
   - Default
   - TransparentFX

@@ -5,9 +5,9 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - creador: {instanceID: 0}
-  - btn_crear: {instanceID: 0}
-  - btn_random: {instanceID: 0}
+  - ventana_estado_planetas: {instanceID: 0}
   - planet: {fileID: 1302853306954878, guid: 153772b94bf0ba74f9c4aca0b957a4d7, type: 2}
+  - estacion: {fileID: 1296502855121226, guid: cc83b4de0241ba5478b9c948cef44eef, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

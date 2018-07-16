@@ -49,7 +49,8 @@ public class CrearPlaneta : MonoBehaviour {
             _newplanet.transform.SetParent(this.transform.parent.Find("Planetas").transform, true);
             creador.SetActive(false);
         }
-        else {
+        else
+        {
             GameObject _newEstation = Instantiate(estacion, estacion.transform.position, estacion.transform.rotation);
             _newEstation.transform.position = ubicacion;
             _newEstation.transform.SetParent(this.transform.parent.Find("Planetas").transform, true);
